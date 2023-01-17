@@ -9,13 +9,13 @@ def centerroom():
     
     choice = raw_input(">_")
     
-    if choice == "left":
+    if choice == "left" or "LEFT" or "Left":
         leftroom()
-    if choice == "right":
+    if choice == "right" or "RIGHT" or "Right":
         rightroom()
-    if choice == "up":
+    if choice == "up" or "UP" or "Up":
         upperroom()
-    if choice == "down":
+    if choice == "down" or "DOWN" or "Down":
         lowerroom()
     
         
@@ -29,7 +29,7 @@ def lowerroom():
     
     choice = raw_input(">_")
     
-    if choice == "up":
+    if choice == "up" or "UP" or "Up":
         centerroom()
     else:
         lowerroom()
@@ -41,7 +41,7 @@ def upperroom():
     
     choice = raw_input(">_>")
     
-    if choice == "down":
+    if choice == "down" or "DOWN" or "Down":
         centerroom()
     else:
         upperroom()
@@ -52,7 +52,7 @@ def rightroom():
     
     choice = raw_input(">_>")
     
-    if choice == "left":
+    if choice == "left" or "Left" or "LEFT":
         centerroom()
     else:
         rightroom()
@@ -63,7 +63,7 @@ def leftroom():
     
     choice = raw_input(">_<")
     
-    if choice == "right":
+    if choice == "right" or "Right" or "RIGHT":
         centerroom()
     else:
         leftroom()
